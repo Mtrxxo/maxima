@@ -1,0 +1,577 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #111;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+}
+
+.background{
+    background-color: #111;
+    background-image: url(../images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    height: 50px;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.nav__one{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.nav__one li,
+.nav__two li{
+    list-style-type: none;
+}
+
+.nav__one a,
+.nav__two a{
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.nav__two{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+h1{
+    color: #f5f5f5;
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 10px #000;
+    font-family: "Lilita One", sans-serif;
+}
+
+.h2{
+    font-size: 3rem;
+    font-family: "Lilita One", sans-serif;
+    color: #f5f5f5;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.h3{
+    font-family: "Lilita One", sans-serif;
+}
+
+main{
+    background-color: #111;
+    min-height: 50vh;
+}
+
+.user,
+.list{
+    display: none;
+}
+
+.img__container{
+    margin: 0 3rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+.img img{
+    width: 200px;
+    height: 200px;
+}
+
+.nowrap-one{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.nowrap-two{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.about{
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.about h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.about__info{
+    font-size: 1rem;
+    margin: 1rem 10rem 0;
+    line-height: 1.7;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.btndiv{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.signup,
+.menu{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+}
+
+.signup:hover,
+.menu:hover,
+.signup:focus,
+.menu:focus{
+    background-color: #f5f5f5;
+    color: #111;
+    border: 2px solid #111;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex-flow: row nowrap;
+    background-color: #111;
+    position: relative;
+}
+
+.form,
+.signup-image{
+    width: 50%;
+    min-height: 100%;
+}
+
+.signup-img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.signup-h1,
+.login-h1{
+    position: absolute;
+    top: 2rem;
+    font-size: 2rem;
+    font-family: "Lilita One", sans-serif;
+}
+
+.signup__info,
+.login__info{
+    font-size: 1rem;
+    margin: 1rem 10rem 0;
+    line-height: 1.7;
+    font-weight: 500;
+    text-align: justify;
+    color: #f5f5f5;
+}
+
+.formie{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
+input{
+    width: 50%;
+    height: 3rem;
+    background-color: #111;
+    color: #f5f5f5;
+    text-align: center;
+    border-color: #f5f5f5;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+}
+
+input:hover,
+input:focus{
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    color: #111;
+    transition: all 0.2s ease;
+    border-radius: 15px;
+}
+
+.signup__now,
+.login__now{
+    background-color: #f5f5f5;
+    color: #111;
+    border: 2px solid #111;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.view-login,
+.view-signup{
+    text-decoration: none;
+    color: #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+
+}
+
+.signup__now:hover,
+.signup__now:focus,
+.login__now:hover,
+.login__now:focus{
+    background-color: #111;
+    color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: all 0.5s ease;
+}
+
+.btn-group{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.menu__h3{
+    color: #f5f5f5;
+}
+
+.menu-body{
+    background-color: #111;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu-header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.black,
+.milky,
+.brown{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.menu-img{
+    width: 300px;
+    height: 300px;
+}
+
+.coffee,
+.cappuccino,
+.croissant{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.macchiato,
+.latte,
+.iced-coffee{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+h4{
+    font-family: "Lilita One", sans-serif;
+    letter-spacing: 3px;
+    color: #f5f5f5;
+    font-size: 2rem;
+}
+
+.twenty,
+.thirty,
+.forty{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.info{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.pricing{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+@media (min-width: 360px){
+  .background{
+    height: 1200px;
+  }
+
+  .h1{
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .active{
+    width: 50%;
+  }
+
+  .h2{
+    margin-right: 20rem;
+  }
+
+  .about{
+    padding-bottom: 5rem;
+  }
+
+  .about__info{
+    margin: 1rem 5rem 0;
+  }
+
+  .signup-image{
+    display: none;
+  }
+
+  .container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-image: url(../images/Signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .form{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.425);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .signup-h1,
+  .login-h1{
+    display: none;
+  }
+
+  .signup__info,
+  .login__info{
+    margin: 1rem;
+  }
+
+  input{
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    color: #111;
+    border-radius: 15px;
+  }
+
+  input:focus{
+    outline: none;
+  }
+
+  .signup__now,
+  .login__now{
+    border: 2px solid #f5f5f5;
+    background-color: transparent;
+    color: #f5f5f5;
+  }
+}
+
+@media (min-width: 576px){
+    
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 1440px){
+
+}
+
+@media (max-width: 767px){
+    .fa-solid{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-two-div{
+        display: none;
+    }
+
+    .active{
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        display: block;
+        transition: "display" 0.5s ease;
+    }
+
+    .userAct{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1.5rem;
+    }
+
+    .userAcct{
+        padding-top: 5rem;
+        gap: 1rem;
+    }
+
+    .signnn,
+    .loggg{
+        width: 300px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .signnn a{
+        background-color: #f5f5f5;
+        color: #111;
+        padding: 0.5rem;
+        border-radius: 15px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .signnn a:hover,
+    .signnn a:focus,
+    .signnn a:active{
+        font-weight: 900;
+        border: 5px solid #111;
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .loggg a{
+        background-color: #111;
+        color: #f5f5f5;
+        border: 2px solid #f5f5f5;
+        padding: 0.5rem;
+        border-radius: 15px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .loggg a:hover,
+    .loggg a:focus,
+    .loggg a:active{
+        font-weight: 900;
+        border: 5px solid #f5f5f5;
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .loggg a:focus,
+    .signnn a:focus{
+        outline: none                   ;
+    }
+
+    .nav__two{
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .sponup{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .navigation{
+        padding: 2rem 1rem 0 1rem;
+    }
+}
